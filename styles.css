@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+
+  /* --Background-Colors */
+  --primaryBg-color: #fff;
+  --secondaryBg-color: #0891b2;
+  --projectOneBg-color: #9e1c1c;
+  --projectTwoBg-color: #7c75ca;
+  --projectThreeBg-color: #5e8f4d;
+  --projectFourBg-color: #c363b4;
+  --projectFiveBg-color: #d88f39;
+  --projectSixBg-color: #4ba2d2;
+  /* --Text-Colors */
+  --primaryText-color: #000;
+  --secondaryText-color: #565656;
+  --tertiaryText-color: #fff;
+
+  /* Fonts */
+  --headerFonts: "Playfair Display", serif;
+  --bodyFonts: "Roboto", sans-serif;
+}
