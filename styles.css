@@ -31,15 +31,24 @@ body {
 }
 
 /* --General Styles */
-h2 {
+h2,
+h3 {
   font-family: var(--headerFonts);
+  color: var(--primaryText-color);
 }
 
 p {
   font-family: var(--bodyFonts);
+  color: var(--secondaryText-color);
 }
 
-/* --Header-- */
+.my__work,
+.contact__me {
+  padding: 0 4em;
+}
+
+/* --HEADER-- */
+
 .about__me {
   padding: 4em 2em;
   display: flex;
@@ -49,12 +58,11 @@ p {
 }
 
 .blue-background {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 25em;
+  min-height: 27em;
   background-color: var(--secondaryBg-color);
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
@@ -66,6 +74,7 @@ p {
   display: flex;
   align-items: center;
   overflow: visible;
+  /* box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1); */
 }
 
 .about-me-photo {
@@ -78,6 +87,7 @@ p {
   width: 100%;
   height: 100%;
   transform: scaleY(1.2);
+  box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1);
 }
 
 .name-overlay {
@@ -86,7 +96,7 @@ p {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: var(--primaryBg-color);
   text-align: center;
   padding: 1em;
 }
@@ -94,6 +104,7 @@ p {
 .name-overlay h2 {
   font-size: 2.2rem;
   font-weight: 500;
+  color: var(--primaryBg-color);
 }
 
 .about-me-text {
@@ -112,7 +123,6 @@ p {
 }
 
 .about-me-text .about-p {
-  color: var(--secondaryText-color);
   width: 60ch;
   line-height: 1.4;
   font-size: 1rem;
@@ -129,3 +139,87 @@ p {
   height: 22px;
   width: 24px;
 }
+
+/* --MAIN-- */
+
+.my__work {
+  margin: 4em 2em;
+}
+
+.my__work h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.my__work__projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  row-gap: 2.6em;
+  margin-top: 1em;
+}
+
+.work-card {
+  background-color: var(--primaryBg-color);
+  box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.1);
+}
+
+.project-one {
+  background-color: var(--projectOneBg-color);
+}
+
+.project-two {
+  background-color: var(--projectTwoBg-color);
+}
+
+.project-three {
+  background-color: var(--projectThreeBg-color);
+}
+
+.project-four {
+  background-color: var(--projectFourBg-color);
+}
+
+.project-five {
+  background-color: var(--projectFiveBg-color);
+}
+
+.project-six {
+  background-color: var(--projectSixBg-color);
+}
+
+.work-card .work__image {
+  text-align: center;
+  padding: 3.3em 2em;
+}
+
+.work__image h2 {
+  color: var(--primaryBg-color);
+}
+
+.work-card .work__text {
+  padding: 1em 2em 4em 2em;
+  background-color: var(--primaryBg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.work-card .work__text h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.work__text .name-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link__github {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+/* --FOOTER-- */
