@@ -42,11 +42,6 @@ p {
   color: var(--secondaryText-color);
 }
 
-.my__work,
-.contact__me {
-  padding: 0 4em;
-}
-
 /* --HEADER-- */
 
 .about__me {
@@ -143,6 +138,7 @@ p {
 /* --MAIN-- */
 
 .my__work {
+  padding: 0 4em;
   margin: 4em 2em;
 }
 
@@ -223,3 +219,66 @@ p {
 }
 
 /* --FOOTER-- */
+
+.contact__me {
+  background-color: var(--secondaryBg-color);
+  margin-top: 6em;
+  color: var(--primaryBg-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 5.5em;
+}
+
+.contact-me-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  padding: 2em 0;
+}
+
+.contact-me-details h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--primaryBg-color);
+}
+
+.contact-me-details p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--primaryBg-color);
+  width: 30ch;
+  line-height: 1.2;
+}
+
+.tel__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.phone__text,
+.email__text {
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.footer--socials {
+  display: flex;
+  gap: 1.2em;
+}
+
+.footer--socials a {
+  height: 30px;
+  width: 30px;
+}
+
+.footer-img-container {
+  width: 40em;
+  height: auto;
+}
+
+.footer-img {
+  width: 100%;
+  height: 100%;
+}
