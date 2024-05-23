@@ -42,245 +42,255 @@ p {
   color: var(--secondaryText-color);
 }
 
-/* --HEADER-- */
+/* Laptop Design */
+@media screen and (min-width: 992px) {
+  /* --HEADER-- */
 
-.about__me {
-  padding: 4em 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+  .about__me {
+    padding: 4em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
-.blue-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 27em;
-  background-color: var(--secondaryBg-color);
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-}
+  .blue-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 27em;
+    background-color: var(--secondaryBg-color);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
 
-.about-me-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: visible;
-  /* box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1); */
-}
+  .about-me-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    /* box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1); */
+  }
 
-.about-me-photo {
-  position: relative;
-  width: 18em;
-  height: 18em;
-}
+  .about-me-photo {
+    position: relative;
+    width: 18em;
+    height: 18em;
+  }
 
-.header-img {
-  width: 100%;
-  height: 100%;
-  transform: scaleY(1.2);
-  box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1);
-}
+  .header-img {
+    width: 100%;
+    height: 100%;
+    transform: scaleY(1.2);
+    box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
 
-.name-overlay {
-  position: absolute;
-  bottom: -2em;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
-  color: var(--primaryBg-color);
-  text-align: center;
-  padding: 1em;
-}
+  .name-overlay {
+    position: absolute;
+    bottom: -2em;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    color: var(--primaryBg-color);
+    text-align: center;
+    padding: 1em;
+  }
 
-.name-overlay h2 {
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: var(--primaryBg-color);
-}
+  .name-overlay h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--primaryBg-color);
+  }
 
-.about-me-text {
-  background-color: var(--primaryBg-color);
-  padding: 1.4em 0.9em;
-  display: flex;
-  flex-direction: column;
-  gap: 1.7em;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-}
+  .about-me-text {
+    background-color: var(--primaryBg-color);
+    padding: 1.4em 0.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
 
-.about-me-text .about-h2 {
-  color: var(--primaryText-color);
-  font-size: 2rem;
-  font-weight: 500;
-}
+  .about-me-text .about-h2 {
+    color: var(--primaryText-color);
+    font-size: 2rem;
+    font-weight: 500;
+  }
 
-.about-me-text .about-p {
-  width: 60ch;
-  line-height: 1.4;
-  font-size: 1rem;
-}
+  .about-me-text .about-p {
+    width: 60ch;
+    line-height: 1.4;
+    font-size: 1rem;
+  }
 
-.about-me-socials {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  gap: 0.7em;
-}
+  .about-me-socials {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 0.7em;
+  }
 
-.about-me-socials a {
-  height: 22px;
-  width: 24px;
-}
+  .about-me-socials a {
+    height: 22px;
+    width: 24px;
+  }
 
-/* --MAIN-- */
+  /* --MAIN-- */
 
-.my__work {
-  padding: 0 4em;
-  margin: 4em 2em;
-}
+  .my__work {
+    padding: 0 4em;
+    margin: 4em 2em;
+  }
 
-.my__work h2 {
-  font-size: 2.2rem;
-  font-weight: 400;
-}
+  .my__work h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
 
-.my__work__projects__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  row-gap: 2.6em;
-  margin-top: 1em;
-}
+  .my__work__projects__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    row-gap: 2.6em;
+    margin-top: 1em;
+  }
 
-.work-card {
-  background-color: var(--primaryBg-color);
-  box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.1);
-}
+  .work-card {
+    background-color: var(--primaryBg-color);
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.1);
+  }
 
-.project-one {
-  background-color: var(--projectOneBg-color);
-}
+  .project-one {
+    background-color: var(--projectOneBg-color);
+  }
 
-.project-two {
-  background-color: var(--projectTwoBg-color);
-}
+  .project-two {
+    background-color: var(--projectTwoBg-color);
+  }
 
-.project-three {
-  background-color: var(--projectThreeBg-color);
-}
+  .project-three {
+    background-color: var(--projectThreeBg-color);
+  }
 
-.project-four {
-  background-color: var(--projectFourBg-color);
-}
+  .project-four {
+    background-color: var(--projectFourBg-color);
+  }
 
-.project-five {
-  background-color: var(--projectFiveBg-color);
-}
+  .project-five {
+    background-color: var(--projectFiveBg-color);
+  }
 
-.project-six {
-  background-color: var(--projectSixBg-color);
-}
+  .project-six {
+    background-color: var(--projectSixBg-color);
+  }
 
-.work-card .work__image {
-  text-align: center;
-  padding: 3.3em 2em;
-}
+  .work-card .work__image {
+    text-align: center;
+    padding: 3.3em 2em;
+  }
 
-.work__image h2 {
-  color: var(--primaryBg-color);
-}
+  .work__image h2 {
+    color: var(--primaryBg-color);
+  }
 
-.work-card .work__text {
-  padding: 1em 2em 4em 2em;
-  background-color: var(--primaryBg-color);
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
+  .work-card .work__text {
+    padding: 1em 2em 4em 2em;
+    background-color: var(--primaryBg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
 
-.work-card .work__text h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
+  .work-card .work__text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 
-.work__text .name-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .work__text .name-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.link__github {
-  display: flex;
-  align-items: center;
-  gap: 0.7em;
-}
+  .link__github {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
 
-/* --FOOTER-- */
+  /* --FOOTER-- */
 
-.contact__me {
-  background-color: var(--secondaryBg-color);
-  margin-top: 6em;
-  color: var(--primaryBg-color);
-  display: flex;
-  justify-content: space-between;
-  padding: 4em 5.5em;
-}
+  .contact__me {
+    background-color: var(--secondaryBg-color);
+    margin-top: 6em;
+    color: var(--primaryBg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 5.5em;
+  }
 
-.contact-me-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.4em;
-  padding: 2em 0;
-}
+  .contact-me-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    padding: 2em 0;
+  }
 
-.contact-me-details h2 {
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: var(--primaryBg-color);
-}
+  .contact-me-details h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--primaryBg-color);
+  }
 
-.contact-me-details p {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--primaryBg-color);
-  width: 30ch;
-  line-height: 1.2;
-}
+  .contact-me-details p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--primaryBg-color);
+    width: 30ch;
+    line-height: 1.2;
+  }
 
-.tel__text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6em;
-}
+  .tel__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+  }
 
-.phone__text,
-.email__text {
-  display: flex;
-  gap: 0.8em;
-  align-items: center;
-}
+  .phone__text,
+  .email__text {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+  }
 
-.footer--socials {
-  display: flex;
-  gap: 1.2em;
-}
+  .footer--socials {
+    display: flex;
+    gap: 1.2em;
+  }
 
-.footer--socials a {
-  height: 30px;
-  width: 30px;
-}
+  .footer--socials a {
+    height: 30px;
+    width: 30px;
+  }
 
-.footer-img-container {
-  width: 40em;
-  height: auto;
-}
+  .footer-img-container {
+    width: 40em;
+    height: auto;
+  }
 
-.footer-img {
-  width: 100%;
-  height: 100%;
+  .footer-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* --TABLET DESIGN-- */
+
+@media screen and (min-width: 600px) {
+  /* HEADER */
+  .about-me-container {
+    display: none;
+  }
+}
