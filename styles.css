@@ -417,3 +417,105 @@ p {
     width: 50%;
   }
 }
+
+/* *--MOBILE DESIGN--* */
+
+@media screen and (max-width: 767px) {
+  /* *--HEADER--* */
+
+  .about-me-container {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    background-color: var(--primaryBg-color);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    width: 100%;
+    padding: 3em 1.6em;
+  }
+
+  .about-me-photo {
+    position: absolute;
+    left: 0;
+    top: -2em;
+    z-index: 1;
+    margin-top: -4em;
+    margin-left: -2.8em;
+    width: 17em;
+    height: 18em;
+  }
+
+  .header-img {
+    transform: scaleY(1);
+  }
+
+  .about-me-text {
+    padding: 0;
+    width: 100%;
+    background-color: none;
+    box-shadow: none;
+    gap: 0.8em;
+  }
+
+  .about-me-text .about-h2 {
+    text-align: center;
+  }
+
+  .about-me-text .about-p {
+    width: 100%;
+  }
+
+  .about-me-text p {
+    line-height: 1.4;
+    font-size: 1rem;
+  }
+
+  .tablet-p-hidden {
+    display: none;
+  }
+
+  .about-me-socials {
+    display: none;
+  }
+
+  .name-overlay {
+    position: absolute;
+    top: 0;
+    right: -70%;
+  }
+
+  .name-overlay h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--primaryBg-color);
+  }
+
+  /* *--MAIN--* */
+
+  .my__work {
+    padding: 0 2em;
+    margin: 4em 0 10em 0;
+  }
+
+  .my__work h2 {
+    text-align: center;
+  }
+
+  .my__work__projects__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    row-gap: 2.6em;
+    margin-top: 1em;
+  }
+
+  /* *--FOOTER--* */
+  .contact__me {
+    padding: 4em;
+  }
+
+  .contact-me-details {
+  }
+}
