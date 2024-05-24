@@ -69,7 +69,6 @@ p {
   display: flex;
   align-items: center;
   overflow: visible;
-  /* box-shadow: 10px 15px -3px rgb(0 0 0 / 0.1); */
 }
 
 .about-me-photo {
@@ -423,29 +422,23 @@ p {
 @media screen and (max-width: 767px) {
   /* *--HEADER--* */
 
+  .about__me {
+    padding: 3em 1em;
+  }
+
   .about-me-container {
-    /* margin-top: 6em; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* background-color: var(--primaryBg-color); */
-    /* box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); */
     width: 100%;
     padding: 0em 1em;
   }
 
   .about-me-photo {
-    /* position: absolute;
-    left: 0;
-    top: -2em;
-    z-index: 1;
-    margin-top: -4em;
-    margin-left: -2.8em; */
     width: 17em;
     height: auto;
-    /* box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); */
   }
 
   .header-img {
@@ -499,7 +492,6 @@ p {
   .name-overlay {
     position: absolute;
     bottom: 0;
-    /* right: -70%; */
   }
 
   .name-overlay h2 {
@@ -529,9 +521,35 @@ p {
 
   /* *--FOOTER--* */
   .contact__me {
-    padding: 4em;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-me-details {
+    padding: 1em;
+  }
+
+  .contact-me-details h2 {
+    text-align: center;
+  }
+
+  .contact-me-details p {
+    font-size: 1.1rem;
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  .footer--socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-img-container {
+    width: 100%;
+    height: 30em;
+    margin-top: 3em;
   }
 }
